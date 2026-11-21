@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Journey | Sanket Balaji</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0b0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #d4af70;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* EDUCATION TIMELINE */
+
+.timeline {
+    border-left: 3px solid #d4af70;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.item {
+    background: #17171e;
+    border: 1px solid #303039;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    border-color: #d4af70;
+}
+
+.item::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #d4af70;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: 30px;
+    box-shadow: 0 0 12px #d4af70;
+}
+
+.item h2 {
+    color: #d4af70;
+    margin: 12px 0;
+}
+
+.item h3 {
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #bbb;
+    line-height: 1.7;
+}
+
+.status {
+    background: #29251d;
+    color: #d4af70;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* CODING PROFILES */
+
+.profiles-title {
+    margin-top: 80px;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.profile-card {
+    background: #17171e;
+    border: 1px solid #303039;
+    border-radius: 15px;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-7px);
+    border-color: #d4af70;
+    box-shadow: 0 0 15px rgba(212, 175, 112, 0.15);
+}
+
+.profile-card h2 {
+    color: #d4af70;
+    margin-bottom: 12px;
+}
+
+.profile-card p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.profile-card span {
+    color: #d4af70;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 70px;
+    border-top: 1px solid #303039;
+    padding-top: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .item {
+        padding: 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- EDUCATION JOURNEY -->
+    <h1>My Education Journey</h1>
+    <p class="subtitle">
+        Every step of learning is a step toward my future.
+    </p>
+
+    <div class="timeline">
+
+        <!-- 10th -->
+        <div class="item">
+            <span class="status">Completed</span>
+            <h2>10th Grade</h2>
+            <h3>JPHS, Pakala</h3>
+            <p>
+                Completed my school education at JPHS, Pakala.
+                Built my basic knowledge and learning foundation.
+            </p>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="item">
+            <span class="status">Completed</span>
+            <h2>Intermediate</h2>
+            <h3>Saraswati Junior College, Pongal</h3>
+            <p>
+                Completed my intermediate education and
+                prepared myself for higher studies and new opportunities.
+            </p>
+        </div>
+
+        <!-- College -->
+        <div class="item">
+            <span class="status">Currently Pursuing</span>
+            <h2>Bachelor's Degree</h2>
+            <h3>Sri Shanmugha College of Engineering and Technology</h3>
+            <p>
+                Pursuing Artificial Intelligence and Data Science (AI & DS).
+                Learning programming, AI, Data Science, and modern technologies
+                to develop my technical knowledge.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- CODING PROFILES -->
+    <h1 class="profiles-title">My Coding Profiles</h1>
+    <p class="subtitle">
+        Practice • Build • Learn • Improve
+    </p>
+
+    <div class="profile-container">
+
+        <!-- GitHub -->
+        <a href="https://github.com/YOUR_USERNAME"
+           target="_blank" rel="noopener noreferrer"
+           class="profile-card">
+            <h2>GitHub</h2>
+            <p>Explore my projects, repositories, and development journey.</p>
+            <span>Visit Profile ↗</span>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/YOUR_USERNAME"
+           target="_blank" rel="noopener noreferrer"
+           class="profile-card">
+            <h2>LeetCode</h2>
+            <p>Explore my coding practice and problem-solving journey.</p>
+            <span>Visit Profile ↗</span>
+        </a>
+
+        <!-- CodeChef -->
+        <a href="https://www.codechef.com/users/YOUR_USERNAME"
+           target="_blank" rel="noopener noreferrer"
+           class="profile-card">
+            <h2>CodeChef</h2>
+            <p>Explore my programming practice and coding skills.</p>
+            <span>Visit Profile ↗</span>
+        </a>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Learning today • Building tomorrow</p>
+        <p>© 2026 Sanket Balaji</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
